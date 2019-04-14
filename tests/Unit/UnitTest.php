@@ -15,8 +15,14 @@ class UnitTest extends TestCase
      * @return void
      */
 
+    public function testDataTypeCar()
+    {
+        $cars = car::inRandomOrder()->first();
+        $year = (int)$cars->Year;
+        $this->assertInternalType("int", $year);
+    }
 
-    public function testInsertCar()
+        public function testInsertCar()
     {
         $cars = new Car();
         $cars->user_id = "123";
