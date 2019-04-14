@@ -15,8 +15,8 @@
                     @endif
 
                     This is my about page
-                        @foreach ($users as $user)
-                            <p>This is user {{ $user->name . 'ID: ' . $user->id }}</p>
+                        @foreach ($cars as $car)
+                            <p>This is user {{ $car->year . 'ID: '    }}</p>
                         @endforeach
                 </div>
             </div>

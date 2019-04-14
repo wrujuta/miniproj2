@@ -34,12 +34,13 @@ class HomeController extends Controller
 
 
 
-        $users = User::all();
+       // $users = User::all();
+
+        $user = Auth::user();
+        $cars = $user->cars();
 
 
-        dd($users->count());
-
-        return view('profile' , ['users' => $users ]);
+        return view('profile' , ['cars' => $cars]);
     }
 }
 

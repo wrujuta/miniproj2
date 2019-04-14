@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Car;
 use Illuminate\Http\Request;
 
 class CarController extends Controller
@@ -16,7 +15,6 @@ class CarController extends Controller
     {
         //
     }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -26,7 +24,6 @@ class CarController extends Controller
     {
         //
     }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -37,7 +34,6 @@ class CarController extends Controller
     {
         //
     }
-
     /**
      * Display the specified resource.
      *
@@ -48,7 +44,6 @@ class CarController extends Controller
     {
         //
     }
-
     /**
      * Show the form for editing the specified resource.
      *
@@ -59,7 +54,6 @@ class CarController extends Controller
     {
         //
     }
-
     /**
      * Update the specified resource in storage.
      *
@@ -71,7 +65,6 @@ class CarController extends Controller
     {
         //
     }
-
     /**
      * Remove the specified resource from storage.
      *
