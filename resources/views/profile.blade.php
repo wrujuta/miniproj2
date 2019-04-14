@@ -14,9 +14,9 @@
                         </div>
                     @endif
 
-                    This is my about page
+                    My about page
                         @foreach ($cars as $car)
-                            <p>This is user {{ $car->year . 'ID: '    }}</p>
+                            <p>This is user {{ $car->year . 'ID: '   }}</p>
                         @endforeach
                 </div>
             </div>
