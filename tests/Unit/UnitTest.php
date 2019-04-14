@@ -6,6 +6,7 @@ use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use App\User;
+use App\Car;
 class UnitTest extends TestCase
 {
     /**
@@ -15,27 +16,14 @@ class UnitTest extends TestCase
      */
 
 
-    public function testUpdate()
+    public function testInsertCar()
     {
-        $user = User::find(1);
-        $user->save();
-        $this->assertTrue($user->delete());
-    }
-
-    public function testCount()
-    {
-        $user = User::all();
-        $recordsCount = $user->count();
-        $this->assertEquals(50, $recordsCount);
-    }
-
-    public function testInsertUser()
-    {
-        $user = new User();
-        $user->name = "Leena Patil";
-        $user->email = "lp277@njit.com";
-        $user->password = "123456";
-        $this->assertTrue($user->save());
+        $cars = new Car();
+        $cars->user_id = "123";
+        $cars->make = 'Honda';
+        $cars->model = 'City';
+        $cars->year = '2010';
+        $this->assertTrue($cars->save());
     }
 
 }
