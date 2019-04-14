@@ -13,14 +13,21 @@ class UnitTest extends TestCase
      *
      * @return void
      */
-    public function testInsertUser()
-    {
-        $user = new User();
-        $user->name = "Wrujuta Dhavale";
-        $user->email = "wpd2@njit.edu";
-        $user->password = "123456";
 
-        $this->assertTrue($user->save());
+
+    public function testDelete()
+    {
+        $user = new  User();
+        $user->name = "Shreya";
+        $user->email = "Shreya@gmail.com";
+        $user->password = 'qwerty';
+        $user->save();
+        $this->assertTrue($user->delete());
     }
+
 }
+
+
+
+
 
