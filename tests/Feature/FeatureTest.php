@@ -35,4 +35,12 @@ class FeatureTest extends TestCase
         $response->assertStatus(200);
 
     }
+
+    public function testRegister3()
+    {
+        $response = $this->get('/contact');
+
+        $response->assertStatus(200);
+
+    }
 }
