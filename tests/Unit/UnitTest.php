@@ -33,6 +33,16 @@ class UnitTest extends TestCase
         $this->assertTrue($cars->save());
     }
 
+    public function testDeleteCar()
+    {
+        $cars = new car();
+        $cars->user_id = "234";
+        $cars->make = 'Honda';
+        $cars->model = 'City';
+        $cars->year = '2009';
+        $cars->save();
+        $this->assertTrue($cars->delete());
+    }
 }
 
 
