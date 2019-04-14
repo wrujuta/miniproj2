@@ -16,8 +16,16 @@ class FeatureTest extends TestCase
      */
     public function testRegister()
     {
-        $response = $this->get('/');
+        $response = $this->get('/login');
 
         $response->assertStatus(200);
+    }
+
+    public function testRegister1()
+    {
+        $response = $this->get('/login');
+
+        $response->assertStatus(200);
+
     }
 }
